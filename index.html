@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <nav>
+        <div id="centeredNav">
+            <div id="logo">
+                <h1>DojoWeather</h1>
+            </div>
+            <div id="navRight">
+                <ul>
+                    <li onclick="showAlert()">Burbank</li>
+                    <li onclick="showAlert()">Chicago</li>
+                    <li onclick="showAlert()">Dallas</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="container">
+        <div id="locationWeather">
+            <div id="locationName">
+                <h1>San Jose</h1>
+            </div>
+            <div id="tempSelection">
+                <p>Show Temperature in </p>
+                <select onchange="tempConvertion(this)">
+                    <option>°F</option>
+                    <option>°C</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div id="forecast">
+            <div id="weatherBox">
+                <div id="weatherBoxTop">
+                    <h1>Today</h1>
+                    <img src="img/some_rain.png" alt="some rain">
+                    <p><b>some rain</b></p>
+                </div>
+                <div id="weatherBoxBottom">
+                    <h1 class="red"><span class="temp1">75</span>°</h1>
+                    <h1 class="blue"><span class="temp2">65</span>°</h1>
+                </div>
+            </div>
+            <div id="weatherBox">
+                <div id="weatherBoxTop">
+                    <h1>Tomorrow</h1>
+                    <img src="img/some_sun.png" alt="some rain">
+                    <p><b>some sun</b></p>
+                </div>
+                <div id="weatherBoxBottom">
+                    <h1 class="red"><span class="temp3">80</span>°</h1>
+                    <h1 class="blue"><span class="temp4">66</span>°</h1>
+                </div>
+            </div>
+            <div id="weatherBox">
+                <div id="weatherBoxTop">
+                    <h1>Friday</h1>
+                    <img src="img/some_clouds.png" alt="some rain">
+                    <p><b>some clouds</b></p>
+                </div>
+                <div id="weatherBoxBottom">
+                    <h1 class="red"><span class="temp5">69</span>°</h1>
+                    <h1 class="blue"><span class="temp6">61</span>°</h1>
+                </div>
+            </div>
+            <div id="weatherBox">
+                <div id="weatherBoxTop">
+                    <h1>Saturday</h1>
+                    <img src="img/some_sun.png" alt="some rain">
+                    <p><b>some sun</b></p>
+                </div>
+                <div id="weatherBoxBottom">
+                    <h1 class="red"><span class="temp7">78</span>°</h1>
+                    <h1 class="blue"><span class="temp8">70</span>°</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cookieBox">
+        <div id="cookieIcon">
+            <img src="img/cookie.png" alt="Cookie Icon">
+        </div>
+        <div id="cookieBoxMid">
+            <h2>Stop! Cookie time</h2>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <div id="cookieBoxRight">
+            <button onclick="dismissCookie()">I Accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
